@@ -3,22 +3,25 @@ import Main from "../layouts/Main";
 import Home from "../views/Home";
 import PlaylistTracks from "../components/PlaylistTracks";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Main />,
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <Main />,
 
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "playlists/:id",
-        element: <PlaylistTracks />,
-      },
-    ],
-  },
-]);
+      children: [
+        {
+          path: "/",
+          element: <Home />,
+        },
+        {
+          path: "playlists/:id",
+          element: <PlaylistTracks />,
+        },
+      ],
+    },
+  ],
+  { basename: import.meta.env.DEV ? "/" : "/decadify" }
+);
 
 export default router;
