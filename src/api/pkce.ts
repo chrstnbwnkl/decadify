@@ -8,7 +8,7 @@
  */
 
 const clientId = "ea64efce6fb44f5e9a9663cca5af211c" as const;
-const redirectUrl = "http://localhost:3005";
+const redirectUrl = import.meta.env.VITE_CALLBACK_URL;
 
 const authorizationEndpoint = "https://accounts.spotify.com/authorize";
 const tokenEndpoint = "https://accounts.spotify.com/api/token";
