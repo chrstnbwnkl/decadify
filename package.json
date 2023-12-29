@@ -2,6 +2,7 @@
   "name": "decadify",
   "private": true,
   "version": "0.0.1",
+  "homepage": "https://chrstnbwnkl.github.io/decadify/",
   "type": "module",
   "scripts": {
     "dev": "vite",
